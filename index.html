@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pascoal Kahamba | Acha-5</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body onload="projeto.limpaTodosCampos()">
+    <main class="sidebar">
+      <div class="problema">
+        <h1>Exercicío Acha-5</h1>
+        <p>
+          <span>6.5.3 </span> Dois jogadores, cada um pensa uma palavra de 5
+          letras diferentes, sem acentos. Um tenta adivinhar primeiro a palavra
+          que o outro escolheu. Alternadamente, cada um submete ao outro uma
+          palavra também de 5 letras, sem regras. O outro vai informar quantas
+          letras daquela palavra estão presentes na sua palavra secreta. Com
+          base nessa informação e, através de lógica, as letras vão sendo
+          eliminadas ou descobertas. Por exemplo, suponha que a palavra secreta
+          do jogador 1é"zinco". Se o jogador 2 disser "arara", o jogador 1
+          informa "zero", jáque nem o "a" nem o "r" ocorrem em "zinco". O
+          jogador 2 então elimina as duas letras. Se a palavra dita for "ossos",
+          o jogador 1 informa "uma", que pode ser "o" ou "s". Neste ponto (e na
+          sua próxima jogada), o jogador 2 pode dizer "esses" e, ao ser
+          informado que házero ocorrências, elimina o "e" e o "s" e descobre em
+          "ossos" que a letra "o" pertenceàpalavra secreta do jogador 1.
+          Implemente esse jogo, com um banco de palavras de 5 letras para que o
+          computador sorteie a sua palavra secreta
+        </p>
+      </div>
+      <div class="resolvendo">
+        <!-- escreva algo -->
+        <h2>Acha-5</h2>
+        <div class="lineinput">
+          <div class="priInput">
+            <label for="jogador1">Palavra do Jogador1: </label>
+            <input
+              type="password"
+              name="jogador1"
+              id="jogador1"
+              maxlength="5"
+            /><br /><br />
+            <label for="jogador2">Palavra do Jogador2: </label>
+            <input
+              type="password"
+              name="jogador2"
+              id="jogador2"
+              maxlength="5"
+            /><br /><br />
+            <div class="erro"></div>
+            <input
+              type="button"
+              value="Começar o jogo"
+              id="butao"
+              onclick="projeto.validarDados()"
+            />
+          </div>
+          <div class="testeJogador1 teste">
+            <label for="testeJog1">Palavra de Teste(Jog1): </label>
+            <input type="text" maxlength="5" id="testeJog1" /><br /><br />
+            <p class="paragrafoErroTeste1">
+              A palavra de Teste tem de ter no maximo e no minimo 5 caracteres
+            </p>
+            <input
+              type="button"
+              value="Testar"
+              onclick="projeto.contaPalavraJog1()"
+              id="botaoTesteJog1"
+            />
+          </div>
+          <div class="testeJogador2 teste">
+            <label for="testeJog2">Palavra de Teste(Jog2): </label>
+            <input type="text" maxlength="5" id="testeJog2" /><br /><br />
+            <p class="paragrafoErroTeste2">
+              A palavra de Teste tem de ter no maximo e no minimo 5 caracteres
+            </p>
+            <input
+              type="button"
+              value="Testar"
+              id="botaoTesteJog2"
+              onclick="projeto.contaPalavraJog2()"
+            />
+          </div>
+          <div class="resultado">
+            <h2 class="nomeVencedor"></h2>
+            <p class="mensagem"></p>
+            <p>
+              <label for="letrasDescobertas"
+                >Letras Descobertas(Possiveis):
+              </label>
+              <input
+                type="text"
+                placeholder="Anotações"
+                maxlength="5"
+                id="letrasDescobertas"
+              />
+              <input
+                type="text"
+                placeholder="Anotações"
+                maxlength="5"
+                id="letrasDescobertas2"
+              />
+            </p>
+            <p class="quantLetradesc"></p>
+            <p>
+              <label for="seraQueSabesJog1">A palavra é: </label>
+              <input
+                type="text"
+                placeholder="Sera que sabes?"
+                maxlength="5"
+                id="seraQueSabesJog1"
+                oninput="projeto.achaPalavraJog1()"
+              />
+              <input
+                type="text"
+                placeholder="Sera que sabes?"
+                maxlength="5"
+                id="seraQueSabesJog2"
+                oninput="projeto.achaPalavraJog2()"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+      <p>&copy;Exercicío Pascoal Kahamba</p>
+    </footer>
+  </body>
+</html>

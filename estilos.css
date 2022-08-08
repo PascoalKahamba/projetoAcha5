@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(60, 169, 241);
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
+
+.sidebar {
+  padding: 10px;
+}
+
+p {
+  padding: 20px;
+}
+span {
+  color: red;
+  font-size: 1.3em;
+}
+h1,
+h2 {
+  text-shadow: 5px 5px 5px #000;
+}
+#letrasDescobertas,
+#letrasDescobertas2 {
+  margin-top: -28px;
+  margin-left: 320px;
+  outline: 0;
+}
+
+.problema {
+  background-color: rgb(21, 68, 112);
+  color: #fff;
+}
+
+.resolvendo {
+  background-color: rgb(59, 138, 211);
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+input[type="button"] {
+  border: 2px rgb(0, 110, 255) solid;
+  border-radius: 10px;
+  background-color: rgb(43, 114, 180);
+  color: #fff;
+  font-size: 16px;
+  outline: 0;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  width: 150px;
+  transition: 0.6s;
+}
+
+input[type="button"]:hover {
+  background-color: rgb(59, 138, 211);
+}
+
+h1 {
+  background-color: rgb(62, 62, 253);
+  color: #fff;
+}
+h2 {
+  background-color: rgb(62, 62, 253);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+label {
+  color: rgb(236, 131, 11);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.lineinput {
+  padding: 30px;
+  background-color: #fff;
+}
+input[type="password"] {
+  width: 100px;
+  padding: 3px;
+  color: aqua;
+  outline: 0;
+  font-size: 20px;
+}
+.corVermelha {
+  color: red;
+}
+.corPreta {
+  color: #000;
+}
+.fundoPreto {
+  background-color: rgb(59, 59, 59) !important;
+}
+.teste {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #ccc;
+  margin-bottom: 20px;
+  display: none;
+}
+.bordaaqua {
+  border: 2px rgb(56, 183, 241) solid;
+}
+.bordaPreta {
+  border: 2px rgba(34, 34, 34, 0.74) solid;
+}
+
+.teste input {
+  width: 80px;
+}
+.teste input[type="text"] {
+  width: 100px;
+  padding: 3px;
+  color: aqua;
+  outline: 0;
+  font-size: 20px;
+}
+
+.solucao {
+  visibility: hidden;
+  background-color: rgb(59, 138, 211);
+  margin-top: 2px;
+  padding: 20px;
+  transition: 0.6s;
+}
+.resultado {
+  display: none;
+  margin-top: 10px;
+  background-color: rgb(73, 191, 238);
+  color: #fff;
+  padding: 20px;
+  border: 3px solid #fff;
+  border-radius: 16px;
+  box-shadow: 3px 2px 3px 3px #000;
+}
+
+.resultado h2 {
+  text-align: left;
+  background-color: transparent;
+}
+.resultado label {
+  color: #fff;
+  font-size: 1.1em;
+}
+.resultado input {
+  width: 100px;
+  padding: 10px;
+  color: aqua;
+}
+.resultado input[type="text"]::placeholder {
+  font-size: 1.2em;
+}
+#seraQueSabesJog1 {
+  width: 120px;
+  box-shadow: 4px 4px 8px greenyellow;
+  border: none;
+}
+.palavraSecretaErrada {
+  box-shadow: 4px 4px 8px rgb(245, 43, 43) !important;
+}
+#seraQueSabesJog2 {
+  display: none;
+  box-shadow: 4px 4px 8px greenyellow;
+  width: 120px;
+
+  border: none;
+}
+#seraQueSabesJog1,
+#seraQueSabesJog2 {
+  margin-left: 130px;
+  margin-top: -27px;
+  outline: 0;
+}
+
+.erro {
+  width: 500px;
+  margin-bottom: 20px;
+  color: red;
+  font-weight: bold;
+  padding: 13px;
+  border: 2px solid red;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px red;
+  display: none;
+}
+.paragrafoErroTeste1,
+.paragrafoErroTeste2 {
+  width: 700px;
+  margin-bottom: 20px;
+  color: red;
+  font-weight: bold;
+  padding: 13px;
+  border: 2px solid red;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px red;
+  display: none;
+}
+
+.solucao p {
+  line-height: 4px;
+}
+footer {
+  width: 500px;
+  margin: 0 auto;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+}
