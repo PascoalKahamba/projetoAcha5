@@ -83,7 +83,7 @@ class Projeto {
     if (this.valorJogador1.value == "" || this.valorJogador2.value == "") {
       this.mostrar(divErro);
       divErro.innerText =
-        "Nenhum dos campos pode estar vazios. POR FAVOR PREENCHAM TODOS OS DADOS";
+        "Nenhum dos campos pode estar vazios. POR FAVOR PREENCHA TODOS OS DADOS";
     } else if (
       this.valorJogador1.value.length < 5 ||
       this.valorJogador2.value.length < 5
